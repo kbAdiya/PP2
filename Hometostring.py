@@ -1,4 +1,4 @@
-#comment Python syntax
+#Python syntax
 print("////// ex1-2")
 print("Hello, World!")
 #Python uses indentation to indicate a block of code
