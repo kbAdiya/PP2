@@ -128,6 +128,15 @@ prime_numbers = list(filter(lambda x: is_prime(x), numbers))
 
 print("Original list:", numbers)
 print("Prime numbers:", prime_numbers)
+#or
+is_prime = lambda x: all(x % i != 0 for i in range(2, int(x**0.5) + 1)) and x > 1
+
+numbers_str = input("Enter a list of numbers separated by spaces: ")
+numbers = list(map(int, numbers_str.split()))
+
+prime_numbers = list(filter(is_prime, numbers))
+print("Prime numbers:", prime_numbers)
+ 
 
 
 
